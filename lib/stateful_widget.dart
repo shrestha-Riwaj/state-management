@@ -20,6 +20,9 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          Text(
+            DateTime.now().toString(),
+          ),
           Container(
             child: Center(
               child: Text(
@@ -33,6 +36,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           x++;
+
           print(x);
           setState(() {});
         },

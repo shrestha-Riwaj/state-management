@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:statemanagement/provider.dart';
 import 'package:statemanagement/screen/home_screen.dart';
 import 'package:statemanagement/stateful_widget.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: ProviderPage(),
     );
   }
 }
